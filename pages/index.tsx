@@ -2,15 +2,11 @@ import Link from "next/link";
 import { useState } from "react";
 import Cartao from "../components/Cartao";
 import EntradaNumerica from "../components/EntradaNumerica";
-import Porta from "../components/Porta";
-import Presente from "../components/Presente";
-import { atualizarPortas, criarPortas } from "../functions/portas";
-import PortaModel from "../model/porta";
 import styles from '../styles/Formulario.module.css'
 
 export default function Formulario() {
-  const [qtdePortas, setQtdePortas] = useState(10)
-  const [comPresente, setComPresente] = useState(8);
+  const [qtdePortas, setQtdePortas] = useState(3)
+  const [comPresente, setComPresente] = useState(2);
   return (
     <div>
         <div className={styles.formulario}>
